@@ -1,0 +1,30 @@
+{
+   "enabledPlugins": {
+     "belaltaher8/test-plugin-repo": true,
+     "belaltaher8/test-plugin-repo:plugins/subdir-plugin": true,
+     "https://github.com/belaltaher8/test-plugin-https.git": true,
+     "http://github.com/belaltaher8/test-plugin-http.git": true,
+     "ssh://github.com/belaltaher8/test-plugin-ssh.git": true,
+     "git@github.com:belaltaher8/test-plugin-git-at.git": true,
+     "my-custom-plugin@my-marketplace": true,
+     "git-plugin@git-marketplace": true,
+     "sentry": true,
+     "./local-plugin": true
+   },
+   "extraKnownMarketplaces": {
+     "my-marketplace": {
+       "source": {
+         "source": "github",
+         "repo": "belaltaher8/test-marketplace",
+         "ref": "main"
+       }
+     },
+     "git-marketplace": {
+       "source": {
+         "source": "git",
+         "url": "https://github.com/belaltaher8/test-marketplace-git.git",
+         "ref": "main"
+       }
+     }
+   }
+ }
