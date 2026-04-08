@@ -8,7 +8,7 @@
      "git@github.com:belaltaher8/test-plugin-git-at.git": true,
      "my-custom-plugin@my-marketplace": true,
      "git-plugin@git-marketplace": true,
-     "sentry": true,
+     "spark": true,
      "./local-plugin": true
    },
    "extraKnownMarketplaces": {
