@@ -6,19 +6,11 @@
      "http://github.com/belaltaher8/test-plugin-http.git": true,
      "ssh://github.com/belaltaher8/test-plugin-ssh.git": true,
      "git@github.com:belaltaher8/test-plugin-git-at.git": true,
-     "my-custom-plugin@my-marketplace": true,
+     "my-custom-plugin@my-marketplace": false,
      "git-plugin@git-marketplace": true,
-     "spark": true,
      "./local-plugin": true
    },
    "extraKnownMarketplaces": {
-     "my-marketplace": {
-       "source": {
-         "source": "github",
-         "repo": "belaltaher8/test-marketplace",
-         "ref": "main"
-       }
-     },
      "git-marketplace": {
        "source": {
          "source": "git",
