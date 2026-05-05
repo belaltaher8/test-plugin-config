@@ -1,22 +1,47 @@
 {
-   "enabledPlugins": {
-     "belaltaher8/test-plugin-repo": true,
-     "belaltaher8/test-plugin-repo:plugins/subdir-plugin": true,
-     "https://github.com/belaltaher8/test-plugin-https.git": true,
-     "http://github.com/belaltaher8/test-plugin-http.git": true,
-     "ssh://github.com/belaltaher8/test-plugin-ssh.git": true,
-     "git@github.com:belaltaher8/test-plugin-git-at.git": true,
-     "my-custom-plugin@my-marketplace": false,
-     "git-plugin@git-marketplace": true,
-     "./local-plugin": true
-   },
-   "extraKnownMarketplaces": {
-     "git-marketplace": {
-       "source": {
-         "source": "git",
-         "url": "https://github.com/belaltaher8/test-marketplace-git.git",
-         "ref": "main"
-       }
-     }
-   }
- }
+  "enabledPlugins": {
+    "belaltaher8/test-plugin-repo": true,
+    "belaltaher8/test-plugin-repo:plugins/subdir-plugin": true,
+    "belaltaher8/test-plugin-repo:plugins/another-subdir": true,
+    "https://github.com/belaltaher8/test-plugin-https.git": true,
+    "http://github.com/belaltaher8/test-plugin-http.git": true,
+    "ssh://github.com/belaltaher8/test-plugin-ssh.git": true,
+    "git@github.com:belaltaher8/test-plugin-git-at.git": true,
+    "https://gitlab.com/someone/some-plugin.git": true,
+    "my-custom-plugin@my-marketplace": false,
+    "git-plugin@git-marketplace": true,
+    "spark": true,
+    "does-not-exist@git-marketplace": true,
+    "some-plugin@nonexistent-marketplace": true,
+    "some-plugin@broken-marketplace": true,
+    "some-plugin@bad-ref-marketplace": true,
+    "belaltaher8/nonexistent-repo-12345": true,
+    "../escape-attempt": true,
+    "/tmp/absolute-plugin": true,
+    ".": true,
+    "./local-plugin": true
+  },
+  "extraKnownMarketplaces": {
+    "git-marketplace": {
+      "source": {
+        "source": "git",
+        "url": "https://github.com/belaltaher8/test-marketplace-git.git",
+        "ref": "main"
+      }
+    },
+    "broken-marketplace": {
+      "source": {
+        "source": "git",
+        "url": "https://github.com/belaltaher8/nonexistent-marketplace-repo.git",
+        "ref": "main"
+      }
+    },
+    "bad-ref-marketplace": {
+      "source": {
+        "source": "git",
+        "url": "https://github.com/belaltaher8/test-marketplace-git.git",
+        "ref": "nonexistent-branch-xyz"
+      }
+    }
+  }
+}
