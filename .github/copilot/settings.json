@@ -2,7 +2,7 @@
   "enabledPlugins": {
     "belaltaher8/my-test-plugin-with-agent": true,
     "belaltaher8/my-test-plugin-with-agent:subdir-plugins/subdir-plugin": true,
-    "my-custom-plugin@my-marketplace": false,
+    "my-custom-plugin@my-marketplace": true,
     "git-plugin@git-marketplace": true,
     "spark": true,
     "./local-plugin": true
