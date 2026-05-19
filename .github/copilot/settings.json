@@ -1,24 +1,10 @@
 {
   "enabledPlugins": {
-    "belaltaher8/test-plugin-repo": true,
-    "belaltaher8/test-plugin-repo:plugins/subdir-plugin": true,
-    "belaltaher8/test-plugin-repo:plugins/another-subdir": true,
-    "https://github.com/belaltaher8/test-plugin-https.git": true,
-    "http://github.com/belaltaher8/test-plugin-http.git": true,
-    "ssh://github.com/belaltaher8/test-plugin-ssh.git": true,
-    "git@github.com:belaltaher8/test-plugin-git-at.git": true,
-    "https://gitlab.com/someone/some-plugin.git": true,
+    "belaltaher8/my-test-plugin-with-agent": true,
+    "belaltaher8/my-test-plugin-with-agent:subdir-plugins/subdir-plugin": true,
     "my-custom-plugin@my-marketplace": false,
     "git-plugin@git-marketplace": true,
     "spark": true,
-    "does-not-exist@git-marketplace": true,
-    "some-plugin@nonexistent-marketplace": true,
-    "some-plugin@broken-marketplace": true,
-    "some-plugin@bad-ref-marketplace": true,
-    "belaltaher8/nonexistent-repo-12345": true,
-    "../escape-attempt": true,
-    "/tmp/absolute-plugin": true,
-    ".": true,
     "./local-plugin": true
   },
   "extraKnownMarketplaces": {
@@ -29,18 +15,11 @@
         "ref": "main"
       }
     },
-    "broken-marketplace": {
+    "my-marketplace": {
       "source": {
-        "source": "git",
-        "url": "https://github.com/belaltaher8/nonexistent-marketplace-repo.git",
+        "source": "github",
+        "repo": "belaltaher8/test-marketplace",
         "ref": "main"
-      }
-    },
-    "bad-ref-marketplace": {
-      "source": {
-        "source": "git",
-        "url": "https://github.com/belaltaher8/test-marketplace-git.git",
-        "ref": "nonexistent-branch-xyz"
       }
     }
   }
