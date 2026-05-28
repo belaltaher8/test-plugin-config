@@ -1,5 +1,12 @@
 {
   "lspServers": {
+    "rust": {
+      "command": "rust-analyzer",
+      "initializationTimeoutMs": 120000,
+      "fileExtensions": {
+        ".rs": "rust"
+      }
+    },
     "typescript": {
       "command": "typescript-language-server",
       "args": ["--stdio"],
